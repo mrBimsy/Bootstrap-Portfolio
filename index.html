@@ -15,24 +15,34 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>mr Bimsy portfolio</title>
   </head>
+
   <!-- -------------------------------------------------------------------- -->
   <!-- NavBar -->
   <!-- -------------------------------------------------------------------- -->
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark color: white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-white">
       <a class="navbar-brand" href="#">mrBimsyDEV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About me</a>
@@ -40,62 +50,187 @@
           <li class="nav-item">
             <a class="nav-link" href="#">My skills</a>
           </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              My work
+            </a>
+            <div class="dropdown-menu aria-labelledby="navbarDropdownMenuLink"
+            style="color: white;">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#">Contact me</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My work
-            </a>
-            <div class="dropdown-menu navbar-dark bg-dark aria-labelledby="navbarDropdownMenuLink" style="color: white;">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-</ul>
+        </ul>
       </div>
     </nav>
+
     <!-- -------------------------------------------------------------------- -->
     <!-- Jumbotron -->
     <!-- -------------------------------------------------------------------- -->
-    <div class="jumbotron jumbotron-fluid" style="background-image: url(../Bootstrap-Portfolio/images/25336.jpg); 
-    background-size: 50%; 
-    background-position: center; 
-    color: white; 
-    text-shadow: 2px 4px 20px #000000">
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="
+        background-image: url(../Bootstrap-Portfolio/images/25336.jpg);
+        background-size: 50%;
+        background-position: center;
+        color: white;
+        text-shadow: 2px 4px 20px #000000;
+      "
+    >
       <div class="container">
         <h1 class="display-4">Front-End developer</h1>
         <p class="lead">under construction.</p>
       </div>
     </div>
+
     <!-- -------------------------------------------------------------------- -->
     <!-- Main section -->
     <!-- -------------------------------------------------------------------- -->
     <!-- Create Containers And Rows Below -->
     <div class="container-fluid content">
-      <!-- Row 1 -->
-      <div class="row valueProp">
-        <div class="sideAccent">
-        </div>
-        <div class="col-4" id="aboutme">
+      <!-- Row 1 "About"-->
+
+      <div class="row py-5">
+        <div class="col-4 py-8" id="aboutme">
           <h2>About me</h2>
         </div>
         <div class="col-7 article">
-          <p>
-              Hello. My name is Damian Rosiak.
-          </p>
+          <p>Hello. My name is Damian Rosiak.</p>
         </div>
-        <div class="col-4" id="mywork">
-          <div class="sideAccent">
-          <h2>My work</h2>
-        </div>
-        <div class="col-7">
-          
-        </div>
-        
       </div>
 
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-4" id="mywork">
+          <h2>My work</h2>
+        </div>
+        <!-- Top card -->
+        <div class="col-7 py-4">
+          <div class="card-deck text-center">
+            <div class="card" id="proj1">
+              <img
+                class="card-img-top"
+                src="../Bootstrap-Portfolio/images/02-portfolio-4.jpg"
+                alt="Surf report"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Surf report</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Check it out
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      
+        <div class="col-4" id="mywork"></div>
+        <div class="col-7 py-4">
+          <div class="card-deck text-center">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../Bootstrap-Portfolio/images/02-run-buddy.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Check it out
+                </button>
+              </div>
+            </div>
+            <div class="card py-4">
+              <img
+                class="card-img-top"
+                src="../Bootstrap-Portfolio/images/02-portfolio-3.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Check it out
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+
+        <div class="col-4 py-4" id="mywork"></div>
+        <div class="col-7 py-4">
+          <div class="card-deck text-center">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/02-portfolio-1.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Check it out
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../Bootstrap-Portfolio/images/02-portfolio-2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Check it out
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- -------------------------------------------------------------------- -->
     <!-- -->

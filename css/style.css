@@ -1,0 +1,8 @@
+.jumbotron-fluid {
+  height: 400px !important;
+}
+
+.card-img-top {
+  height: 400px !important;
+  object-fit: cover;
+}
