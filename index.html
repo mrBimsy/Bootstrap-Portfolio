@@ -16,6 +16,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>mr Bimsy portfolio</title>
   </head>
@@ -45,10 +49,10 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="#aboutme">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My skills</a>
+            <a class="nav-link" href="#skills">My skills</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -63,13 +67,14 @@
             </a>
             <div class="dropdown-menu aria-labelledby="navbarDropdownMenuLink"
             style="color: white;">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#proj1">Surf report</a>
+            <a class="dropdown-item" href="#runbuddy">Run buddy</a>
+            <a class="dropdown-item" href="#pastelpuzzles">Pastel puzzles</a>
             <a class="dropdown-item" href="#">Something else here</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact me</a>
+            <a class="nav-link" href="#contactme">Contact me</a>
           </li>
         </ul>
       </div>
@@ -106,7 +111,11 @@
           <h2>About me</h2>
         </div>
         <div class="col-7 article">
-          <p>Hello. My name is Damian Rosiak.</p>
+          <p>Welcome to my portfolio website! I'm a front-end developer who creates beautiful, functional websites. 
+            I have experience with HTML, CSS, JavaScript, and frameworks like Bootstrap. 
+            My focus is on the user experience and I pay close attention to design. 
+            Let's work together to bring your vision to life. Contact me to discuss your project.
+          </p>
         </div>
       </div>
 
@@ -121,6 +130,7 @@
             <div class="card" id="proj1">
               <img
                 class="card-img-top"
+                id="surf"
                 src="../Bootstrap-Portfolio/images/02-portfolio-4.jpg"
                 alt="Surf report"
               />
@@ -146,6 +156,7 @@
             <div class="card">
               <img
                 class="card-img-top"
+                id="runbuddy"
                 src="../Bootstrap-Portfolio/images/02-run-buddy.jpg"
                 alt="Run buddy"
               />
@@ -165,6 +176,7 @@
             <div class="card">
               <img
                 class="card-img-top"
+                id="pastelpuzzles"
                 src="../Bootstrap-Portfolio/images/02-portfolio-3.jpg"
                 alt="Car pastel puzzles"
               />
@@ -232,8 +244,8 @@
 
     <div class="container-fluid content">
       <div class="row py-5">
-        <div class="col-4 py-8" id="aboutme">
-          <h2>About me</h2>
+        <div class="col-4 py-8" id="skills">
+          <h2>My skills</h2>
         </div>
         <div class="col-7">
           <ul class="list-group list-group-flush">
@@ -246,6 +258,29 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid content">
+      <div class="row py-5">
+        <div class="col-4 py-8" id="contactme">
+          <h2>Contact me</h2>
+        </div>
+        <div class="col-7">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">phone: 5555-777-777</li>
+            <li class="list-group-item">email: example@example.com</li>
+          </div>
+          </div>
+    </div>
+
+    <footer class="text-center bg-light" id="contact-me-footer">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+
+    </footer>
     <!-- -------------------------------------------------------------------- -->
     <!-- -->
     <!-- -------------------------------------------------------------------- --><!-- jQuery first, then Popper.js, then Bootstrap JS -->
