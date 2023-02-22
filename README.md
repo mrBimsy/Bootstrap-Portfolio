@@ -66,3 +66,5 @@ new things about CSS doing this Project.v
     Deploy your new Bootstrap-powered portfolio to GitHub Pages.
 
 # DEMO
+
+https://mrbimsy.github.io/Bootstrap-Portfolio/
